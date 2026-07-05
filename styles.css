@@ -1,3 +1,66 @@
+
+/* text modification stuff */
+
+* {
+    font-family: sans-serif;
+}
+
+
+.header-main-text {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.primary-text {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.secondary-text {
+    font-size: 18px;
+}
+
+.information-header-text {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.quote-text {
+    font-size: 36px;
+    color: #1F2937; 
+    font-weight: 300;
+}
+
+.header-text {
+    color: #F9FAF8;
+}
+
+.action-text {
+    color: #F9FAF8;
+}
+
+.footer-text {
+    color: #F9FAF8;
+}
+
+button {
+    color: #F9FAF8;
+    background-color: #3882F6;
+    border-radius: 10px;
+}
+
+button.action-text {
+    border: 2.5px solid #F9FAF8;
+}
+
+
+.section-one ul {
+   gap: 10px;
+}
+
+
 body {
    display: flex;
    flex-direction: column;
@@ -5,51 +68,111 @@ body {
 }
 
 ul {
-    display: flex;
+     display: flex;
     list-style: none;
-    gap: 10px;
     margin: 0px;
     padding: 0px;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.body {
-    margin: 10px 100px;
+.section-one, .section-two, .section-three, .section-four, .footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.body, img {
-    height: 100px;
-}
-
-.section-one, .section-two, .section-three, .section-four {
-    display: flex;
-    flex: auto;
     flex-direction: column;
-    margin: 10px 100px;
 }
 
 .section-one {
     background-color: #1F2937;
+    flex: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-image {
+    width: 300px;
+    height: auto;
+}
+.body {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    gap: 10px;
+    margin: auto;
+    
+}
+
+
+.body .text-box {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+}
+.body, img {
+    height: 100px;
 }
 
 .section-two {
-    background-color: #3882F6;
+    background-color: white;
+    flex: 1;
+    align-items: center;
+}
+
+.image-list {
+}
+
+.image-list li {
+     width: 500px;
+    text-align: center;
+    text-wrap-mode: wrap;
+}
+
+
+.image-list img {
+    width: 200px;
+    height: auto;
+    border-radius: 10%;
+    border: 5PX solid green
 }
 
 .section-three {
     background-color: #E5E7EB;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.quote-body {
+    margin: auto;
+}
+
+.quote-author {
+    text-align: right;
 }
 
 .section-four {
-    background-color: #3882F6;
+    background-color: white;
+    flex: 1;
 }
 
+.signup-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3882F6;
+    margin: auto;
+    width: 80%;
+    height: 40%;
+}
+.footer {
+    display: flex;
+    background-color: #1F2937;
+    flex: .3333 1 auto;
+}
+
+.footer-text {
+    margin: auto;
+}
